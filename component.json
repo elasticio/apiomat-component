@@ -3,10 +3,54 @@
   "description": "Generic apiOmat component that speaks to any apiOmat API",
   "credentials": {
     "fields": {
-      "name": {
-        "label": "My API Key",
+      "baseURL": {
+        "label": "apiOmat Host",
+        "viewClass": "TextFieldView",
+        "placeholder": "epdemo.apiomat.enterprises",
+        "required": true
+      },
+      "system": {
+        "viewClass": "SelectView",
+        "label": "System",
         "required": true,
-        "viewClass": "TextFieldView"
+        "model": {
+          "LIVE": "Live",
+          "STAGING": "Staging",
+          "TEST": "Test"
+        }
+      },
+      "apiKey": {
+        "label": "API Key",
+        "viewClass": "TextFieldView",
+        "placeholder": "123456789",
+        "required": true
+      },
+      "adminEmail": {
+        "label": "Admin Email",
+        "viewClass": "TextFieldView",
+        "placeholder": "admin@mycompany.com",
+        "required": true
+      },
+      "adminPassword": {
+        "label": "Admin Email",
+        "viewClass": "PasswordFieldView",
+        "required": true
+      }
+    }
+  },
+  "actions": {
+    "upsertObject": {
+      "title": "Upsert Object",
+      "main": "./lib/actions/upsertObject.js",
+      "dynamicMetadata": true,
+      "fields": {
+        "module": {
+          "viewClass": "SelectView",
+          "label": "Module",
+          "required": true,
+          "model": "objectTypes",
+          "prompt": "Please select a Salesforce Object"
+        }
       }
     }
   }
