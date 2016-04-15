@@ -55,8 +55,8 @@
           "viewClass": "SelectView",
           "label": "Module",
           "required": true,
-          "model": "objectTypes",
-          "prompt": "Please select a Salesforce Object"
+          "model": "getModules",
+          "prompt": "Please select a Module"
         }
       }
     }
