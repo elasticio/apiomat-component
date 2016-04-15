@@ -57,6 +57,13 @@
           "required": true,
           "model": "getModules",
           "prompt": "Please select a Module"
+        },
+        "model": {
+          "viewClass": "SelectView",
+          "label": "Model",
+          "required": true,
+          "model": "getModels",
+          "prompt": "Please select a Model"
         }
       }
     }
