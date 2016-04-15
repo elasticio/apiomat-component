@@ -1,0 +1,42 @@
+{
+  "name": "apiomat-component",
+  "version": "0.0.0",
+  "description": "Generic apiOmat component that speaks to any apiOmat API",
+  "homepage": "http://apiomat.com",
+  "author": {
+    "name": "elastic.io",
+    "email": "info@elastic.io",
+    "url": "http://elastic.io"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "apiomat",
+    "elastic.io",
+    "api",
+    "rest",
+    "integration",
+    "mbaas",
+    "ipaas",
+    "elasticio-component"
+  ],
+  "dependencies": {
+    "q": "^1.4.1",
+    "elasticio-sailor-nodejs": "1.1.2",
+    "elasticio-node": "0.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^2.1.0",
+    "eslint-config-xo-space": "^0.10.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "elasticio/apiomat-component",
+  "license": "Apache-2.0"
+}
