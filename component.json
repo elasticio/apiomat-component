@@ -36,6 +36,12 @@
         "label": "Admin Email",
         "viewClass": "PasswordFieldView",
         "required": true
+      },
+      "app": {
+        "label": "APP Name",
+        "viewClass": "TextFieldView",
+        "placeholder": "MyApp",
+        "required": true
       }
     }
   },
