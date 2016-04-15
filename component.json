@@ -3,7 +3,7 @@
   "description": "Generic apiOmat component that speaks to any apiOmat API",
   "credentials": {
     "fields": {
-      "baseURL": {
+      "host": {
         "label": "apiOmat Host",
         "viewClass": "TextFieldView",
         "placeholder": "epdemo.apiomat.enterprises",
@@ -11,8 +11,9 @@
       },
       "system": {
         "viewClass": "SelectView",
-        "label": "System",
+        "label": "Environment",
         "required": true,
+        "prompt":"Select environment",
         "model": {
           "LIVE": "Live",
           "STAGING": "Staging",
